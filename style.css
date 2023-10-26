@@ -1,0 +1,105 @@
+@charset "utf-8";
+@font-face {
+    font-family: font1;
+    src: url(./Fontes/Next\ Bro.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+height: 100vh;
+width: 100vw;
+background-image: url(https://i.pinimg.com/originals/09/21/5c/09215cee97053edd85a05b7a07a08401.jpg);
+background-repeat: no-repeat;
+
+}
+
+header h1{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 15px;
+    font-family: font1;
+    font-size: 60px;
+}
+
+.container{
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+position: absolute;  /*Torna possivel alterar a posição do container*/
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);  /*altera a posição do eixo do container*/
+}
+
+.imagem img{
+width: 100%;
+height: 100%;
+}
+
+.navegacao{
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translate(-50%);
+display: flex;
+}
+
+.bar{
+    background-color: #ffffff;
+    width: 30px;
+height: 5px;
+margin: 6px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.bar:hover{
+    background-color: #070000;
+}
+
+input{
+    display: none;
+}
+
+.imagens{
+    display: flex;
+height: 100%;
+width: 600%;
+}
+
+.imagem{
+    width: 16.6666666667%;
+    transition: 0.5s;
+}
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -33.3333333333%;
+}
+
+#imagem4:checked ~ .img1{
+margin-left: -50%;
+}
+
+#imagem5:checked ~ .img1{
+margin-left: -66.6666666667%;
+}
+
+#imagem6:checked ~ .img1{
+margin-left: -83.3333333333%;
+}
+
+footer{
+    text-align: center;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+}
